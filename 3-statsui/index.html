@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Статистика</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="menu">
+        <h2>Меню</h2>
+        <img src="./../materials/logo.png" alt="Avatar" width="65%" />
+      </div>
+
+      <button>Dashboard</button>
+      <button>Users</button>
+      <button>File manager</button>
+      <button>Posts</button>
+      <button>Events</button>
+    </div>
+    <h2 class="title">Dashboard - May 25, 2019</h2>
+    <div class="main">
+      <div>
+        <h1><img src="../materials/chart1.png" width="10%" /> Статистика</h1>
+        <canvas id="myChart"></canvas>
+      </div>
+      <div>
+        <h1><img src="../materials/chart2.png" /width="10%"> Нагрузка</h1>
+        <canvas id="myChart2"></canvas>
+      </div>
+      <div>
+        <h1>Останні дії</h1>
+        <table class="activity-table">
+          <tr>
+            <th>Дата</th>
+            <th>Дія</th>
+            <th>Користувач</th>
+          </tr>
+          <tr>
+            <td>2024-03-18</td>
+            <td>Вхід</td>
+            <td>John Doe</td>
+          </tr>
+          <tr>
+            <td>2024-03-17</td>
+            <td>Створення посту</td>
+            <td>Jane Smith</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
